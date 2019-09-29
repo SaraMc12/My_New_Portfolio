@@ -51,6 +51,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  text-align: center;
   font-weight: 400;
 
   &.lg-heading {
@@ -71,7 +72,7 @@ a{
 }
 
 header{
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width:100;
 }
@@ -87,6 +88,7 @@ main{
     min-height: calc(100vh - 60px);
     
     .icons{
+      text-align: center;
         margin-top:1rem;
 
         a{
@@ -108,11 +110,16 @@ main{
 }
 
 //  Menu
-
+#movebtn{
+  // position: absolute;
+  // z-index: 3;
+  float: right;
+}
 .menu-btn{
     position: absolute;
     z-index: 3;
-    right:35px;
+ 
+ 
     top:35px;
     cursor:pointer;
     @include easeOut;
@@ -158,16 +165,17 @@ main{
     //  position:fixed;
     top:0;
      width:100%;
-      opacity: 0.9;
+      opacity: 0.7;
            visibility: hidden;
 
      &.show{
          visibility: visible;
+         width:450px;
      }
 
      &-branding, &-nav{
 display:flex;
-flex-flow:column wrap;
+ flex-flow:column wrap;
 align-items:center;
 justify-content: center;
 
@@ -180,8 +188,8 @@ overflow: hidden
      
      &-nav {
         margin: 0;
-        padding: 0;
-        background: darken($primary-color, 5);
+        padding:0;
+        background: $secondary-color;
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -195,14 +203,38 @@ overflow: hidden
 //   pic side
 
 &-branding{
-    background: $primary-color;
+    background: darken($primary-color, 5);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
     &.show{
         transform: translate3d(0, 0, 0);
     }
-
-}
-  
+ .portrait{
+   width:150px;
+   height:150px;
+   background: url("https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-1/p240x240/62265671_10161855545715858_6303854007215456256_n.jpg?_nc_cat=101&_nc_oc=AQmtMU3AEwlDTL3N2KJSm5Pi7IwaLntzEiP9XPQG_jp4YKfy2w5WJ2kgBfJJ4yHcPKsafN-tx5etpTf_jUo_MUdV&_nc_ht=scontent-ort2-1.xx&oh=f59136389d16ea019dba2a791e008b96&oe=5DF9E7AA");
+   background-size: 150px 150px;
+   z-index:3;
+   border-radius: 50%;
+   border: solid 3px $secondary-color;
  }
+}
+  .nav-item{
+    transform: translate3d(-300px, 0, 0);
+    @include easeOut();
+// Slide in about me section
+&.show{
+  transform: translate3d(0, 0, 0);
+}
+
+  }
+ }
+
+// Delay each nav item by 0.1 seconds to make it look nicer
+
+@for $x from 1 through 4{
+  .nav-item:nth-child(#{$x}){
+    transition-delay: $x * 0.2s;
+  }
+}
