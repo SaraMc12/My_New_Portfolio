@@ -159,7 +159,8 @@ main {
 
 .about-info {
   text-align: center;
-  background-size: 150px 150px;
+  margin-left: 350px;
+  margin-right: 300px;
   z-index: 3;
   background: #aeaeae;
   border: solid 3px #d55fe3; }

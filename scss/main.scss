@@ -270,10 +270,13 @@ overflow: hidden
 // about pic
 .about-info{
  text-align: center;
- background-size: 150px 150px;
+ margin-left: 350px;
+ margin-right: 300px;
+//  background-size: 150px 150px;
  z-index:3;
  background: darken($primary-color, 5);
  border: solid 3px $secondary-color;
+ 
   
 }
 
