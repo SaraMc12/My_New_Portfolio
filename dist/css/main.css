@@ -188,7 +188,8 @@ main {
   grid-template-columns: repeate(3 1fr); }
   .projects img {
     width: 300px;
-    border: 5px white solid; }
+    border: 7px white solid;
+    border-radius: 7px; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #d55fe3;
@@ -198,6 +199,7 @@ main {
   display: inline-block;
   padding: 0.5rem 1rem;
   border: 0;
+  border-radius: 4px;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #d55fe3; }
