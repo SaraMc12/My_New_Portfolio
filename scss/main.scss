@@ -289,6 +289,20 @@ overflow: hidden
   
 }
 
+// Case Studie pages
+.about-info-case{
+ 
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 100px;
+ //  background-size: 150px 150px;
+  z-index:3;
+  background: darken($primary-color, 5);
+  border: solid 3px $secondary-color;
+  
+   
+ }
+
 // Delay each nav item by 0.1 seconds to make it look nicer
 
 
@@ -334,7 +348,7 @@ overflow: hidden
 
 .btn-dark{
 @extend .btn;
-background: darken($primary-color, 50);
+background: darken($primary-color, 20);
 color: white;
 }
 

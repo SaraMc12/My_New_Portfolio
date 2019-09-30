@@ -170,6 +170,14 @@ main {
   background: #aeaeae;
   border: solid 3px #d55fe3; }
 
+.about-info-case {
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 100px;
+  z-index: 3;
+  background: #aeaeae;
+  border: solid 3px #d55fe3; }
+
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
 
@@ -205,7 +213,7 @@ main {
     background: #d55fe3; }
 
 .btn-dark {
-  background: #3c3c3c;
+  background: #888888;
   color: white; }
 
 .btn-light {
