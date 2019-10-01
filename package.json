@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/SaraMc12/My_New_Portfolio/issues"
   },
-  "homepage": "https://github.com/SaraMc12/My_New_Portfolio#readme",
+  "homepage": "https://saramc12.github.io/My_New_Portfolio/",
   "dependencies": {
     "node-sass": "^4.12.0"
   }
